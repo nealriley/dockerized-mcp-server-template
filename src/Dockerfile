@@ -1,5 +1,4 @@
 FROM python:3.12.9-slim
-#FROM public.ecr.aws/docker/library/python:3.12.9-slim
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1
@@ -19,7 +18,7 @@ COPY . /code/
 EXPOSE 3000
 
 # Start the app with uvicorn
-CMD ["uvicorn", "server:app", "--host", "0.0.0.0", "--port", "3000"]
+CMD ["python", "/code/server.py"]
 
 # Create a non-root user
 RUN useradd -m appuser
