@@ -1,6 +1,6 @@
-# MCP Docker Example
+# Dockerized MCP Server Template
 
-This repository provides a simple example of a Python server implementing the **Model Context Protocol (MCP)**, running in a Docker container and utilizing Server-Sent Events (SSE) for real-time communication.
+This repository provides a reusable template for a Python server implementing the **Model Context Protocol (MCP)**, running in a Docker container and utilizing Server-Sent Events (SSE) for real-time communication. Built using the FastMCP library, this template enables easy integration with Large Language Models (LLMs).
 
 ## What is MCP?
 
@@ -10,12 +10,12 @@ The **Model Context Protocol (MCP)** is a standardized protocol designed specifi
 - **Tools**: Allow LLMs to execute actions or computations (similar to POST endpoints).
 - **Prompts**: Reusable templates for structured interactions with LLMs.
 
-This example demonstrates a simple MCP server running in a Docker container, utilizing Server-Sent Events (SSE) for real-time communication.
+This template demonstrates a production-ready MCP server running in a Docker container, utilizing Server-Sent Events (SSE) for real-time communication.
 
 ## Project Structure
 
 ```
-mcp-docker/
+dockerized-mcp-server-template/
 ├── src/
 │   ├── Dockerfile
 │   ├── requirements.txt
