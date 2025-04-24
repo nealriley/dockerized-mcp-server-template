@@ -1,9 +1,11 @@
 services:
-  app:
+  salable:
     build:
       context: ./src
     # Remove the following if you don't need environment variables (RUNNING_IN_PRODUCTION can be used see server.py)
-    # env_file:
-    #   - .env
+    environment:
+      - SALABLE_API_TOKEN=test_
+      - OPENAPI_SPEC_URL=https://d2jzis2pwe9wri.cloudfront.net/openapi.v2.yaml
+      - TOOL_PREFIX=salable
     ports:
       - 3000:3000
